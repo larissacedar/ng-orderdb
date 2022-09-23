@@ -1,0 +1,11 @@
+<!-- one way data binding allows us to bind a variable TS to html-->
+<p>Order: {{ order_id }}</p>
+<p>Bought by: {{ name }}</p>
+<p>Protein: {{ protein }}</p>
+<p>Price: {{ price }}</p>
+<p>yearorder: {{ yearorder }}</p>
+<p>CustomerID: {{ customerID }}</p>
+<!--event binding: we can bind events from ts to html-->
+<button (click)="complet()">complet</button>
+<!--structural directive: we can use angular to modify the structure of the DOM on the fly-->
+<p *ngIf="completed">Order Completed!</p>

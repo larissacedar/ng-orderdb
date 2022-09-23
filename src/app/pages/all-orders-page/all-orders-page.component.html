@@ -1,0 +1,28 @@
+<p>All-Orders-Page Works!</p>
+<div *ngFor="let order of orders">
+  <app-order-card
+    [order_id]="order.order_id"
+    [protein]="order.protein"
+    [price]="order.price"
+    [yearorder]="order.yearorder"
+    [customerID]="order.customerID"
+  ></app-order-card>
+</div>
+
+<!--
+<app-order-card
+  [order_id]="placeholderOrders[0].order_id"
+  [protein]="placeholderOrders[0].protein"
+  [price]="placeholderOrders[0].price"
+  [yearorder]="placeholderOrders[0].yearorder"
+  [customerID]="placeholderOrders[0].customerID"
+></app-order-card>
+<app-order-card
+  [order_id]="placeholderOrders[1].order_id"
+  [protein]="placeholderOrders[1].protein"
+  [price]="placeholderOrders[1].price"
+  [yearorder]="placeholderOrders[1].yearorder"
+  [customerID]="placeholderOrders[1].customerID"
+></app-order-card>
+<app-order-card></app-order-card>
+-->
